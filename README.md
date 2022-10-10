@@ -1,24 +1,15 @@
-# anichat-vue
+# 🚀 Welcome to your new awesome project!
 
-## Project setup
-```
-yarn install
-```
+This project has been created using **webpack-cli**, you can now run
 
-### Compiles and hot-reloads for development
 ```
-yarn serve
+npm run build
 ```
 
-### Compiles and minifies for production
+or
+
 ```
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+to bundle your application

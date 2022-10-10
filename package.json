@@ -1,5 +1,5 @@
 {
-  "name": "anichat-vue",
+  "name": "my-webpack-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,17 +8,55 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "assert": "^2.0.0",
+    "axios": "^0.27.2",
+    "child_process": "^1.0.2",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "crypto-browserify": "^3.12.0",
+    "el-table-draggable": "^1.4.12",
+    "element-plus": "^2.2.2",
+    "fs": "0.0.1-security",
+    "http-proxy-middleware": "^2.0.6",
+    "https": "^1.0.0",
+    "lodash": "^4.17.21",
+    "net": "^1.0.2",
+    "node-polyfill-webpack-plugin": "^2.0.0",
+    "node-sass": "^7.0.1",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "pouchdb": "^7.3.0",
+    "primeicons": "^5.0.0",
+    "primevue": "^3.12.6",
+    "querystring-es3": "^0.2.1",
+    "sass-loader": "^13.0.0",
+    "stream-browserify": "^3.0.0",
+    "tls": "0.0.1",
+    "url": "^0.11.0",
+    "util": "^0.12.4",
+    "v-network-graph": "^0.5.17",
+    "vue": "^3.2.13",
+    "vue-class-component": "^8.0.0-0",
+    "vue-good-table": "^2.21.11",
+    "vue-gsheets": "^4.0.3",
+    "vue-resizer": "^1.1.9",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "@types/pouchdb": "^6.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "typescript": "~4.5.5"
   },
   "eslintConfig": {
     "root": true,
@@ -27,13 +65,21 @@
     },
     "extends": [
       "plugin:vue/vue3-essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/typescript/recommended"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
+      "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "vue/no-deprecated-slot-attribute": "off"
+    }
   },
+  "browser": {
+    "fs": false,
+    "child_process": false
+  },
+
   "browserslist": [
     "> 1%",
     "last 2 versions",
